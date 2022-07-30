@@ -1,5 +1,8 @@
 # WRITE YOUR FUNCTIONS HERE
 
+from unicodedata import name
+
+
 def get_pet_shop_name(name):
     return name["name"]
 
@@ -43,4 +46,25 @@ def remove_pet_by_name(pets, name):
         if pet["name"] == name:
             pets["pets"].remove(pet)
 
-    
+def add_pet_to_stock(pets, new_pets):
+    pets["pets"].append(name)
+
+def get_customer_cash(customers):
+    # set total to 0
+    cash = customers["cash"]
+    return cash
+
+def remove_customer_cash(customer, remove):
+    customer["cash"] -= remove
+    return remove
+
+def get_customer_pet_count(customers):
+    customer_pets = customers["pets"]
+    for customer in customers:
+        if customer[1] == []:
+            customer_pets.append(customer) 
+    return len(customer_pets)
+
+def add_pet_to_customer(customer, new_pet):
+    customer["pets"].append(new_pet)
+    return customer["pets"]
