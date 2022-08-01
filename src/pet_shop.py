@@ -50,9 +50,7 @@ def add_pet_to_stock(pets, new_pets):
     pets["pets"].append(name)
 
 def get_customer_cash(customers):
-    # set total to 0
-    cash = customers["cash"]
-    return cash
+    return customers["cash"]
 
 def remove_customer_cash(customer, remove):
     customer["cash"] -= remove
@@ -68,3 +66,4 @@ def get_customer_pet_count(customers):
 def add_pet_to_customer(customer, new_pet):
     customer["pets"].append(new_pet)
     return customer["pets"]
+
